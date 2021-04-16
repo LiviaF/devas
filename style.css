@@ -1,0 +1,86 @@
+body{
+  background-color: #7AB1FF;
+}
+
+.navigation{
+  float: right;
+  margin-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.a-home{
+  margin-right: 50px;
+  color: black;
+}
+.a-mapeamento{
+  margin-right: 50px;
+  color: black;
+}
+.a-parcerias{
+  margin-right: 50px;
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+
+.title {
+  position: absolute;
+  width: 1234px;
+  height: 135px;
+  left: 128px;
+  top: 106px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 76px;
+
+  color: #000000;
+
+}
+
+.resume{
+  position: absolute;
+  width: 562px;
+  height: 143px;
+  left: 128px;
+  top: 311px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 169% */
+
+
+  color: #000000;
+}
+.photo{
+  float: right;
+  width: 650px;
+  height: 494px;
+  margin-top: 200px;
+  margin-left: 750px;
+}
+.button{
+  position: absolute;
+  width: 280px;
+  height: 60px;
+  left: 466px;
+  top: 544px;
+  color: white;
+  background: #04123F;
+  border-radius: 5px;
+  border: none;
+}
+.button.-second{
+  left: 128px;
+  top: 544px;
+  background: #023DF1;
+}
