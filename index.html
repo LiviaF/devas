@@ -54,19 +54,59 @@
             <!-- FORM AQUI -->
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label>Nome</label>
+                <input type="text" class="form-control" placeholder="Digite seu nome">
               </div>
+
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label>Região</label>
+                
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Escolha sua Região</option>
+                  <option value="1">Sul</option>
+                  <option value="2">Norte</option>
+                  <option value="3">Nordeste</option>
+                  <option value="4">Sudeste</option>
+                  <option value="5">Centro-Oeste</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Digite seu email">
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+
+              <div class="form-group">
+                <label>Linkedin</label>
+                <input type="text" class="form-control" placeholder="Digite seu Linkedin">
+              </div>
+
+              <div class="form-group">
+                <label>GitHub</label>
+                <input type="text" class="form-control" placeholder="Digite seu GitHub">
+              </div>
+
+              <div class="form-group">
+                <label>Senha</label>
+                <input type="password" class="form-control" placeholder="Digite sua senha">
+              </div>
+  
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="btn-check form-check-input" id="btn-check" autocomplete="off">
+                <label for="btn-check">Single toggle</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="btn-check form-check-input" id="btn-check" autocomplete="off">
+                <label for="btn-check">Single toggle</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="btn-check form-check-input" id="btn-check" autocomplete="off">
+                <label for="btn-check">Single toggle</label>
+              </div>
+              
+
             </form>
           </div>
           <div class="modal-footer">
