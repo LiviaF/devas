@@ -9,7 +9,9 @@
     <title>Devas em Ação</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+   
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/> 
   </head>
   <body>
     <div class="background">
@@ -91,21 +93,45 @@
                 <input type="password" class="form-control" placeholder="Digite sua senha">
               </div>
   
-              <div class="form-check form-check-inline">
-                <input type="checkbox" class="btn-check form-check-input" id="btn-check" autocomplete="off">
-                <label for="btn-check">Single toggle</label>
+              <div class="form-group">
+                <label>Área de atuação</label>
+                
+                <select id="area-multiple-select" multiple="multiple">
+                  <option value="front">Front</option>
+                  <option value="back">Back</option>
+                  <option value="fullstack">Fullstack</option>
+                  <option value="inteligencia-artificial">Inteligência Artificial</option>
+                  <option value="engenharia-software">Engenharia de Software</option>
+                </select>
               </div>
 
-              <div class="form-check form-check-inline">
-                <input type="checkbox" class="btn-check form-check-input" id="btn-check" autocomplete="off">
-                <label for="btn-check">Single toggle</label>
-              </div>
-
-              <div class="form-check form-check-inline">
-                <input type="checkbox" class="btn-check form-check-input" id="btn-check" autocomplete="off">
-                <label for="btn-check">Single toggle</label>
+              <div class="form-group">
+                <label>Linguagens</label>
+                
+                <select id="linguagens-multiple-select" multiple="multiple">
+                  <option value="c">C</option>
+                  <option value="c#">C#</option>
+                  <option value="c++">C++</option>
+                  <option value="python">Python</option>
+                  <option value="js">JavaScript</option>
+                  <option value="html-css">HTML/CSS</option>
+                  <option value="java">Java</option>
+                </select>
               </div>
               
+              <div class="form-group">
+                <label>Conhecimentos</label>
+                
+                <select id="conhecimentos-multiple-select" multiple="multiple">
+                  <option value="react-native">React Native</option>
+                  <option value="node-js">Node JS</option>
+                  <option value="ruby-on-rails">RubyOnRails</option>
+                  <option value="angular">Angular</option>
+                  <option value="vue">Vue</option>
+                  <option value="ember-js">Ember.js</option>
+                  <option value="express">Express</option>
+                </select>
+              </div>
 
             </form>
           </div>
@@ -120,7 +146,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script src="script.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#area-multiple-select').multiselect();
+          $('#linguagens-multiple-select').multiselect();
+          $('#conhecimentos-multiple-select').multiselect();
+      });
+  </script>
   </body>
 </html>
