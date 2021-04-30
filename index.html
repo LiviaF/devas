@@ -57,13 +57,13 @@
             <form>
               <div class="form-group">
                 <label>Nome</label>
-                <input id="nameInput" type="text" class="form-control" placeholder="Digite seu nome">
+                <input id="name-input" type="text" class="form-control" placeholder="Digite seu nome">
               </div>
 
               <div class="form-group">
                 <label>Região</label>
                 
-                <select class="custom-select" id="inputGroupSelect01">
+                <select class="custom-select" id="regiao-select">
                   <option selected>Escolha sua Região</option>
                   <option value="1">Sul</option>
                   <option value="2">Norte</option>
@@ -75,22 +75,22 @@
 
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" placeholder="Digite seu email">
+                <input id="email-input" type="email" class="form-control" placeholder="Digite seu email">
               </div>
 
               <div class="form-group">
                 <label>Linkedin</label>
-                <input type="text" class="form-control" placeholder="Digite seu Linkedin">
+                <input id="linkedin-input" type="text" class="form-control" placeholder="Digite seu Linkedin">
               </div>
 
               <div class="form-group">
                 <label>GitHub</label>
-                <input type="text" class="form-control" placeholder="Digite seu GitHub">
+                <input id="github-input" type="text" class="form-control" placeholder="Digite seu GitHub">
               </div>
 
               <div class="form-group">
                 <label>Senha</label>
-                <input type="password" class="form-control" placeholder="Digite sua senha">
+                <input id="senha-input" type="password" class="form-control" placeholder="Digite sua senha">
               </div>
   
               <div class="form-group">
@@ -136,8 +136,8 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary" onclick="saveForm()">Salvar</button>
+            <button id="cancelar-button" type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button id="salvar-button" type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveForm()">Salvar</button>
           </div>
         </div>
       </div>
