@@ -1,5 +1,47 @@
+function getMultipleSelect(select) {
+    var valueSelection = [];
+    var i;
+    for (i = 0; i < select.options.length; i += 1) {
+        if (select.options[i].selected) {
+            valueSelection.push(select.options[i].text);
+        }
+    }
+    return valueSelection;
+}
+
 function saveForm(){
-    const form = document.querySelector('form')
+    
+    const name = document.getElementById('name-input');
+    const regiao = document.getElementById('regiao-select')
+    const areas = document.getElementById('area-multiple-select')
+
+    const li1 = document.createElement('li')
+    const li2 = document.createElement('li')
+    const li3 = document.createElement('li')
+
+    li1.innerHTML = name.value
+    li2.innerHTML = regiao.options[regiao.selectedIndex].text
+
+
+    //newDiv.innerHTML = name.value + '<br>'+regiao.options[regiao.selectedIndex].text
+    document.body.appendChild(li1)
+    document.body.appendChild(li2)
+    //newDiv.innerHTML = areas[]
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*const form = document.querySelector('form')
 
     const data = form.querySelectorAll('input,select')
    //console.log(data)
@@ -38,6 +80,6 @@ function saveForm(){
             document.body.appendChild(newDiv)
         }
     }
-//Está imprimindo dentro do for mesmo sem preencher nada, esse data_item != 0 não tá funcionando
+//Está imprimindo dentro do for mesmo sem preencher nada, esse data_item != 0 não tá funcionando*/
 
 }
